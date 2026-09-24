@@ -1,0 +1,25 @@
+[project]
+name = "pusher-game"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "=", email = "=" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pygame>=2.6.1",
+    "pymunk>=7.3.0",
+]
+
+[project.scripts]
+pusher-game = "pusher_game:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
